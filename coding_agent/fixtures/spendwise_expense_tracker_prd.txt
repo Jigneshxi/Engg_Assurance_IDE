@@ -1,0 +1,39 @@
+# SpendWise — Personal Expense & Budget Tracker Platform
+
+A modern, responsive personal finance tracking application with user authentication, expense logging, category budgets, and financial analytics.
+
+## Authentication & Users
+- [REQ-001] Users can register an account with username, email, and password.
+- [REQ-002] Users can log in with email and password to receive a secure JWT authentication token.
+- [REQ-003] User passwords must be securely hashed and protected.
+- [REQ-004] Users can retrieve their own profile information.
+- [REQ-005] Unauthorized requests to protected endpoints return HTTP 401 Unauthorized.
+
+## Expense Categories
+- [REQ-006] Users can create custom expense categories with a name, icon, and color.
+- [REQ-007] Users can list and view their defined expense categories.
+- [REQ-008] Categories are isolated by user; users cannot access or view another user's categories.
+
+## Expense Management
+- [REQ-009] Users can log an expense with amount, category_id, date, description, and payment method.
+- [REQ-010] Users can view a paginated list of their expenses sorted by date descending.
+- [REQ-011] Users can filter expenses by date range and category.
+- [REQ-012] Users can update their own existing expense records.
+- [REQ-013] Users can delete their own expense records.
+- [REQ-014] Expense records enforce strict ownership; users cannot view, edit, or delete another user's expenses.
+
+## Budget Tracking
+- [REQ-015] Users can define monthly budget limits for specific expense categories.
+- [REQ-016] Users can view their budget status including budget limit, actual spend, and remaining amount.
+- [REQ-017] The system calculates category budget utilization percentages.
+
+## Financial Dashboard
+- [REQ-018] The dashboard provides summary statistics for the current month including total spend, budget total, and net savings.
+- [REQ-019] The dashboard displays recent expenses and category distribution breakdown.
+
+## Architecture & Technology Stack
+- [REQ-020] Backend API is built using Python, FastAPI, and SQLAlchemy ORM.
+- [REQ-021] Data persistence uses SQLite database with tables for users, categories, expenses, and budgets.
+- [REQ-022] Frontend is a responsive single-page application built with React, TypeScript, and Vite.
+- [REQ-023] All API endpoints provide request validation with Pydantic schemas and standard error responses.
+- [REQ-024] Automated integration tests verify authentication, expense CRUD, and cross-user data isolation.

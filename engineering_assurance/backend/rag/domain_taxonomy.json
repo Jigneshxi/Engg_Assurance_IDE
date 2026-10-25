@@ -1,0 +1,44 @@
+{
+  "fallback_domain": "GENERAL",
+  "domains": {
+    "AUTHENTICATION": {
+      "keywords": ["login", "log in", "signin", "sign in", "signup", "sign up", "register", "registration", "password", "otp", "mfa", "session", "identity", "account", "email"],
+      "priority_keywords": ["login", "signin", "password", "otp", "mfa", "session"],
+      "capabilities": ["authentication", "login", "identity", "session", "registration", "otp", "mfa", "access_control"]
+    },
+    "ECOMMERCE": {
+      "keywords": ["myntra", "amazon", "flipkart", "catalog", "checkout", "cart", "order", "payment", "product", "inventory", "search", "wishlist", "returns", "shipping"],
+      "priority_keywords": ["myntra", "amazon", "flipkart"],
+      "capabilities": ["catalog", "checkout", "payments", "search", "inventory", "orders", "returns", "shipping", "authentication"]
+    },
+    "HEALTHCARE": {
+      "keywords": ["health", "medical", "hospital", "clinic", "patient", "pharmacy", "ehr", "prescription", "appointment", "telemedicine"],
+      "priority_keywords": ["hospital", "pharmacy", "patient", "medical"],
+      "capabilities": ["appointments", "patient_records", "prescriptions", "billing", "telemedicine", "claims"]
+    },
+    "BANKING": {
+      "keywords": ["bank", "payment", "loan", "account", "ledger", "transfer", "kyc", "card", "wallet", "finance", "upi"],
+      "priority_keywords": ["bank", "wallet", "upi", "ledger"],
+      "capabilities": ["accounts", "payments", "loans", "transfers", "kyc", "cards", "wallet"]
+    },
+    "TRAVEL": {
+      "keywords": ["travel", "flight", "hotel", "booking", "trip", "ticket", "reservation", "itinerary", "baggage"],
+      "priority_keywords": ["flight", "hotel", "booking", "reservation"],
+      "capabilities": ["booking", "itinerary", "pricing", "search", "cancellation", "loyalty"]
+    },
+    "EDUCATION": {
+      "keywords": ["education", "school", "university", "course", "class", "student", "teacher", "learning", "lms", "exam"],
+      "priority_keywords": ["university", "course", "lms", "student"],
+      "capabilities": ["courses", "assignments", "grading", "enrollment", "learning", "assessments"]
+    },
+    "INSURANCE": {
+      "keywords": ["insurance", "policy", "claim", "premium", "underwriting", "coverage", "broker"],
+      "priority_keywords": ["policy", "claim", "premium"],
+      "capabilities": ["claims", "policies", "underwriting", "billing", "renewals"]
+    },
+    "GENERIC": {
+      "keywords": ["requirements", "test plan", "pr d", "prd", "architecture", "automation", "qa"],
+      "capabilities": ["requirements", "test_strategy", "automation", "compliance", "governance", "analysis"]
+    }
+  }
+}

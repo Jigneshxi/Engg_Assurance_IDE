@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.venv/
+.venv-*/
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+
+# Generated Workspaces & Sandboxes
+other files/
+docs/10-legacy-archive/
+workspaces/
+test_ws/
+.workspace/
+.openclaw_sandbox_*
+.openclaw/
+*_test_workspace/
+*workspace*/
+scratch/
+*.db
+__pycache__/
+*.pyc
+*.zip
+.pytest_cache/
+

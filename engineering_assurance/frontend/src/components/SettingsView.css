@@ -1,0 +1,67 @@
+/* Settings View Styles */
+
+.icard-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--status-color, #94a3b8);
+}
+
+.icard-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--status-bg, #94a3b8);
+}
+
+/* Usage Progress Bar Replacement */
+.usage-progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  border: none;
+  display: block;
+}
+
+.usage-progress-bar::-webkit-progress-bar {
+  background: transparent;
+}
+
+.usage-progress-bar::-webkit-progress-value {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 10px;
+  transition: width 0.5s ease-out;
+}
+
+.usage-progress-bar::-moz-progress-bar {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 10px;
+}
+
+.vault-link-preview {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: var(--link-color, #94a3b8);
+  font-weight: 600;
+}
+
+.mt-2-5 {
+  margin-top: 0.625rem;
+}
+
+/* Status Class Mappings */
+.status-online { --status-color: #10b981; --status-bg: #10b981; }
+.status-testing { --status-color: #f59e0b; --status-bg: #f59e0b; }
+.status-fault { --status-color: #ef4444; --status-bg: #ef4444; }
+.status-idle { --status-color: #94a3b8; --status-bg: #94a3b8; }
+
+.link-success { --link-color: #10b981; }
+.link-testing { --link-color: #f59e0b; }
+.link-error { --link-color: #ef4444; }
+.link-idle { --link-color: #94a3b8; }

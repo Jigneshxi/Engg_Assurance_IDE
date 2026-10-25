@@ -1,0 +1,38 @@
+{
+  "status": "INCOMPLETE",
+  "completionStatus": "INCOMPLETE",
+  "gateStatus": "FAIL",
+  "failedGates": [
+    "generationBoundary",
+    "importClosure",
+    "dbOrmSemantics",
+    "requirementTests",
+    "productionBuild",
+    "frontendContract",
+    "browserE2e",
+    "prdCoverage"
+  ],
+  "passedGatesCount": 11,
+  "totalGates": 19,
+  "gates": {
+    "requirementCompleteness": true,
+    "architectureContract": true,
+    "manifestCompleteness": true,
+    "generationCompleteness": true,
+    "generationBoundary": false,
+    "syntax": true,
+    "importClosure": false,
+    "dbOrmSemantics": false,
+    "repairState": true,
+    "security": true,
+    "stubsAbsent": true,
+    "requirementTests": false,
+    "productionBuild": false,
+    "exportHashMatchesValidatedArtifact": true,
+    "frontendContract": false,
+    "backendRuntime": true,
+    "apiAuthz": true,
+    "browserE2e": false,
+    "prdCoverage": false
+  }
+}

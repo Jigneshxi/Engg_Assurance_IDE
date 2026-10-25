@@ -1,0 +1,86 @@
+# ─── Environment & Secrets (NEVER COMMIT SECRETS) ─────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+server/.env
+server/.env.*
+frontend/.env
+frontend/.env.*
+
+# ─── Dependencies ─────────────────────────────────────────────────────────
+node_modules/
+.venv/
+.venv-*/
+venv/
+env/
+.Python
+
+# ─── Build & Distribution ─────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+*.egg-info/
+.eggs/
+
+# ─── Python Caches & Diagnostics ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# ─── Databases & Vector Stores ────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+.chroma_db/
+.chroma_db_recovery/
+chroma_db/
+engineering_assurance/Database/
+
+# ─── Logs & Diagnostic Outputs ────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+out.txt
+out2.txt
+pytest_out.txt
+test_client_output.txt
+backend.log
+execution.log
+
+# ─── Temporary Workspaces, Sandboxes & Large Archives ─────────────────────
+*.zip
+coding_agent/workspaces/
+coding_agent/mock_test_workspace/
+coding_agent/test_workspace/
+coding_agent/archive/
+coding_agent/scratch/
+coding_agent/reports/
+coding_agent/.openclaw/
+engineering_assurance/workspace/
+engineering_assurance/temp_data/
+engineering_assurance/scratch/
+engineering_assurance/outputs/
+engineering_assurance/checkpoints/
+engineering_assurance/test_repo/
+engineering_assurance/docs
+temp_prd.txt
+temp_prd_extracted.txt
+
+# ─── OS & IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+*.sw?

@@ -1,0 +1,100 @@
+[
+  {
+    "task_id": "TASK-001",
+    "title": "Implement User Registration API",
+    "description": "Develop the API endpoint for user registration as defined in the OpenAPI specification.",
+    "acceptance_criteria": [
+      "Successful registration creates a new user record in the database.",
+      "The API returns a 201 Created status code upon successful registration.",
+      "Invalid input data (e.g., missing fields, invalid email format) results in a 400 Bad Request error.",
+      "Password hashing is applied before storing the password in the database."
+    ],
+    "tdd_contract": "def test_user_registration_success():\n    response = client.post('/users/register', json={'username': 'testuser', 'email': 'test@example.com', 'password': 'password123'})\n    assert response.status_code == 201\n    # Verify user exists in the database",
+    "target_paths": [
+      "packages/backend/api/users.py",
+      "infrastructure/db/models.py"
+    ],
+    "capability_refs": [
+      "CAP-01"
+    ],
+    "tdd_hash": "76ee6b2b4723e733b30cba73d098157a1cd4149e3f2005926f7b67007a58091c"
+  },
+  {
+    "task_id": "TASK-002",
+    "title": "Implement User Login API",
+    "description": "Develop the API endpoint for user login and authentication.",
+    "acceptance_criteria": [
+      "Successful login returns a valid JWT token.",
+      "The API returns a 200 OK status code upon successful login.",
+      "Invalid credentials result in a 401 Unauthorized error.",
+      "JWT token includes necessary user information (e.g., user ID, username)."
+    ],
+    "tdd_contract": "def test_user_login_success():\n    response = client.post('/auth/login', json={'username': 'testuser', 'password': 'password123'})\n    assert response.status_code == 200\n    token = response.json()\n    assert isinstance(token, str)",
+    "target_paths": [
+      "packages/backend/api/auth.py"
+    ],
+    "capability_refs": [
+      "CAP-01"
+    ],
+    "tdd_hash": "b0b2f08a80c243b3a9b15c00abf738a43953d872e119ef715779e5410db6a6f4"
+  },
+  {
+    "task_id": "TASK-003",
+    "title": "Implement Flight Search API",
+    "description": "Develop the API endpoint to search for flights based on specified criteria.",
+    "acceptance_criteria": [
+      "The API returns a list of flights matching the search criteria.",
+      "Flights are filtered by origin, destination, and departure date.",
+      "Optional parameters (passengers, class) can be used to further refine the results.",
+      "The API handles invalid or missing input data gracefully."
+    ],
+    "tdd_contract": "def test_flight_search_success():\n    response = client.get('/flights/search?origin=JFK&destination=LAX&departureDate=2024-12-25')\n    assert response.status_code == 200\n    results = response.json()\n    assert isinstance(results, list)",
+    "target_paths": [
+      "packages/backend/api/flights.py",
+      "packages/backend/core/flight_search.py"
+    ],
+    "capability_refs": [
+      "CAP-02"
+    ],
+    "tdd_hash": "27775c60214286a7e95a94f31d072ec0f32dca82238452deaa7d7dc6517a64ef"
+  },
+  {
+    "task_id": "TASK-004",
+    "title": "Implement Hotel Search API",
+    "description": "Develop the API endpoint to search for hotels based on specified criteria.",
+    "acceptance_criteria": [
+      "The API returns a list of hotels matching the search criteria.",
+      "Hotels are filtered by destination, check-in date, and check-out date.",
+      "Optional parameter (guests) can be used to refine results",
+      "API handles invalid or missing input data."
+    ],
+    "tdd_contract": "def test_hotel_search_success():\n    response = client.get('/hotels/search?destination=New York&checkInDate=2024-12-25&checkOutDate=2024-12-30')\n    assert response.status_code == 200\n    results = response.json()\n    assert isinstance(results, list)",
+    "target_paths": [
+      "packages/backend/api/hotels.py",
+      "packages/backend/core/hotel_search.py"
+    ],
+    "capability_refs": [
+      "CAP-03"
+    ],
+    "tdd_hash": "41b089e2cc6604cdd5738b1be1be39afa840d2fb8a31deca211dcd6489f52214"
+  },
+  {
+    "task_id": "TASK-005",
+    "title": "Implement Frontend Flight Search Component",
+    "description": "Develop the React component for searching flights, including input fields and display of search results.",
+    "acceptance_criteria": [
+      "The component displays appropriate input fields for origin, destination, departure date, passengers, and class.",
+      "User input is validated before submitting the search request.",
+      "Search results are displayed in a clear and organized manner.",
+      "Component handles loading state while waiting for API response."
+    ],
+    "tdd_contract": "// Jest test case\n// Mock API call to return dummy flight data\ntest('Flight search component renders correctly', () => {\n  const mockFlights = [{...}];\n  render(<FlightSearch />);\n  expect(screen.getByText(/search flights/i)).toBeInTheDocument();\n});",
+    "target_paths": [
+      "apps/frontend/src/components/FlightSearch.tsx"
+    ],
+    "capability_refs": [
+      "CAP-02"
+    ],
+    "tdd_hash": "252d603486c789c7cbb0884b8185746203e8b2910f23213e98acaf3825613179"
+  }
+]

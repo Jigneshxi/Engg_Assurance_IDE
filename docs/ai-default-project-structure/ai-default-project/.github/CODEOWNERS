@@ -1,0 +1,5 @@
+# This file controls who needs to review changes to specific parts of the repository.
+
+*       @engineering-team
+/docs/  @tech-writers
+/security/ @security-team

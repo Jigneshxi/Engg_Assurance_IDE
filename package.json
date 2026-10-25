@@ -1,0 +1,48 @@
+{
+  "name": "engg-assurance-ide",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Engg Assurance_IDE: Unified AI Coding Agent IDE & Autonomous Engineering Assurance Platform",
+  "type": "module",
+  "scripts": {
+    "dev:ide:frontend": "node coding_agent/node_modules/vite/bin/vite.js --config coding_agent/apps/ide-frontend/vite.config.ts --port 5174 --force",
+    "dev:ide:server": "cd coding_agent/server && node server.js",
+    "dev:ide:python": "cd coding_agent && node packages/python-engine/start.mjs",
+    "dev:ide": "node coding_agent/node_modules/concurrently/dist/bin/index.js -n \"IDE-UI,IDE-API\" -c \"blue,green\" \"npm run dev:ide:frontend\" \"npm run dev:ide:server\"",
+    "dev:assurance:backend": "cd engineering_assurance && ..\\.venv-ide\\Scripts\\python.exe -m uvicorn backend.main:app --host 0.0.0.0 --port 8000",
+    "dev:assurance:frontend": "cd engineering_assurance/frontend && node ../../coding_agent/node_modules/vite/bin/vite.js --port 5173 --host",
+    "dev:assurance": "node coding_agent/node_modules/concurrently/dist/bin/index.js -n \"ASSURE-UI,ASSURE-API\" -c \"magenta,cyan\" \"npm run dev:assurance:frontend\" \"npm run dev:assurance:backend\"",
+    "dev": "npm run dev:ide",
+    "dev:all": "node coding_agent/node_modules/concurrently/dist/bin/index.js -n \"IDE-UI,IDE-API,ASSURE-UI,ASSURE-API\" -c \"blue,green,magenta,cyan\" \"npm run dev:ide:frontend\" \"npm run dev:ide:server\" \"npm run dev:assurance:frontend\" \"npm run dev:assurance:backend\"",
+    "build:ide": "cd coding_agent && npm run build",
+    "build:assurance": "cd engineering_assurance/frontend && npm run build",
+    "build": "npm run build:ide",
+    "test:ide": "cd coding_agent && npm run test",
+    "test:ide:regressions": "cd coding_agent && npm run test:regressions",
+    "test:assurance": "cd engineering_assurance && ..\\.venv-ide\\Scripts\\python.exe -m pytest tests/test_runtime_state.py",
+    "test:bridge": "cd coding_agent && npm run test:bridge",
+    "test": "npm run test:ide",
+    "test:all": "npm run test:ide && npm run test:assurance"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "dotenv": "^17.4.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lucide-react": "^1.27.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.4",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}

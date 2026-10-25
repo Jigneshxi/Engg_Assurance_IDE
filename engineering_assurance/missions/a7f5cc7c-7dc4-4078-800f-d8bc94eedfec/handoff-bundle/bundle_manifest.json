@@ -1,0 +1,13 @@
+{
+  "mission_id": "a7f5cc7c-7dc4-4078-800f-d8bc94eedfec",
+  "files": [
+    "system_specification.json",
+    "risk_advisory_report.json",
+    "tasks.json",
+    "tests/test_TASK-001.py",
+    "tests/test_TASK-002.py",
+    "tests/test_TASK-003.py",
+    "tests/test_TASK-004.py",
+    "tests/test_TASK-005.ts"
+  ]
+}

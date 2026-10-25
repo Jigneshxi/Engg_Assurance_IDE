@@ -1,0 +1,3427 @@
+{
+  "module": "all",
+  "modules": [
+    "all"
+  ],
+  "role": "qa_engineer",
+  "depth": "full",
+  "mission_manifest": {
+    "role": "qa",
+    "allowed_modules": [
+      "ingest",
+      "forge",
+      "certify",
+      "decide"
+    ],
+    "selected_modules": [
+      "ingest",
+      "forge",
+      "certify",
+      "decide"
+    ],
+    "depth": "full",
+    "budget": 999,
+    "deliverables": [
+      "Requirements",
+      "Unified Context Contract",
+      "Test Plan",
+      "Logic Model",
+      "Traceability Matrix",
+      "Governance Report",
+      "Lifecycle Report",
+      "Knowledge Graph",
+      "Meta Intelligence",
+      "Test Cases",
+      "Test Data",
+      "API Mocks",
+      "Automation",
+      "API Automation",
+      "Regression Suite",
+      "Test Strategy",
+      "Cross Browser",
+      "Mobile",
+      "GraphQL",
+      "API Validation",
+      "Visual Baselines",
+      "Microservices",
+      "Mutation",
+      "Migration",
+      "Locator Strategy",
+      "Healing Config",
+      "Performance",
+      "Security",
+      "Chaos",
+      "Delivery",
+      "Reliability",
+      "SLO",
+      "Tracing",
+      "Environment",
+      "Monitoring",
+      "Compliance Remediation",
+      "RCA",
+      "Incident Remediation",
+      "Observability",
+      "Performance Intelligence",
+      "Resilience",
+      "Execution Report",
+      "Pipeline",
+      "Provisioning",
+      "Digital Twin",
+      "Optimized Suite",
+      "Feature Flags",
+      "Event Driven",
+      "Exploratory",
+      "UX",
+      "Release Decision",
+      "Release Package",
+      "Impact",
+      "Business Impact",
+      "ROI",
+      "Trend",
+      "Critic Report",
+      "I18N"
+    ],
+    "deliverables_by_module": [
+      {
+        "module": "ingest",
+        "depth": "full",
+        "capabilities": [
+          "core_analysis",
+          "ingest_governance",
+          "ingest_advanced"
+        ],
+        "deliverables": [
+          "Requirements",
+          "Unified Context Contract",
+          "Test Plan",
+          "Logic Model",
+          "Traceability Matrix",
+          "Governance Report",
+          "Lifecycle Report",
+          "Knowledge Graph",
+          "Meta Intelligence"
+        ],
+        "artifacts": [
+          "REQUIREMENTS",
+          "RAW_REQUIREMENTS",
+          "API_SPEC",
+          "INGESTION_VALIDATION",
+          "REPO_INTELLIGENCE",
+          "TECH_STACK_REPORT",
+          "REFINED_REQUIREMENTS",
+          "UCC",
+          "TEST_PLAN",
+          "LOGIC_MODEL",
+          "TRACEABILITY_MATRIX",
+          "GOVERNANCE_REPORT",
+          "LIFECYCLE_REPORT",
+          "KNOWLEDGE_GRAPH",
+          "META_INTEL_REPORT"
+        ]
+      },
+      {
+        "module": "forge",
+        "depth": "full",
+        "capabilities": [
+          "quality_engineering",
+          "forge_validation",
+          "forge_advanced"
+        ],
+        "deliverables": [
+          "Test Cases",
+          "Test Data",
+          "API Mocks",
+          "Automation",
+          "API Automation",
+          "Regression Suite",
+          "Test Strategy",
+          "Cross Browser",
+          "Mobile",
+          "GraphQL",
+          "API Validation",
+          "Visual Baselines",
+          "Microservices",
+          "Mutation",
+          "Migration",
+          "Locator Strategy",
+          "Healing Config"
+        ],
+        "artifacts": [
+          "TEST_CASES",
+          "TEST_DATA",
+          "API_MOCKS",
+          "AUTOMATION_SCRIPTS",
+          "API_AUTOMATION",
+          "API_DESIGN_SPEC",
+          "DB_SCHEMA_DESIGN",
+          "ENGINEERING_CONTRACT",
+          "FRONTEND_CODE",
+          "BACKEND_CODE",
+          "DATABASE_PIPELINE",
+          "SERVICE_MESH",
+          "TDD_CONTRACTS",
+          "REQUIREMENT_CLARITY_REPORT",
+          "MODULE_BOUNDARY_MAP",
+          "TRACEABILITY_MATRIX_P2",
+          "INTEGRATION_DEPENDENCY_MAP",
+          "PERFORMANCE_BUDGET",
+          "SECURITY_CONSTRAINTS",
+          "COMPLIANCE_REQUIREMENTS",
+          "MCP_RECOMMENDATIONS",
+          "HOOK_GUARDRAIL_RECOMMENDATIONS",
+          "REGRESSION_SUITE",
+          "TEST_STRATEGY",
+          "CROSS_BROWSER_CONFIG",
+          "MOBILE_CONFIG",
+          "GRAPHQL_REPORT",
+          "API_VALIDATION_REPORT",
+          "VISUAL_BASELINES",
+          "MICROSERVICES_REPORT",
+          "MUTATION_REPORT",
+          "MIGRATION_REPORT",
+          "LOCATOR_STRATEGY",
+          "HEALING_CONFIG"
+        ]
+      },
+      {
+        "module": "certify",
+        "depth": "full",
+        "capabilities": [
+          "compliance_core",
+          "compliance_extended",
+          "compliance_advanced"
+        ],
+        "deliverables": [
+          "Performance",
+          "Security",
+          "Chaos",
+          "Delivery",
+          "Reliability",
+          "SLO",
+          "Tracing",
+          "Environment",
+          "Monitoring",
+          "Compliance Remediation",
+          "RCA",
+          "Incident Remediation",
+          "Observability",
+          "Performance Intelligence",
+          "Resilience"
+        ],
+        "artifacts": [
+          "PERFORMANCE_REPORT",
+          "SECURITY_REPORT",
+          "CHAOS_REPORT",
+          "DELIVERY_REPORT",
+          "RELIABILITY_REPORT",
+          "SLO_REPORT",
+          "TRACING_REPORT",
+          "ENV_REPORT",
+          "MONITOR_REPORT",
+          "COMPLIANCE_REMEDIATION",
+          "RCA_REPORT",
+          "INCIDENT_REPORT",
+          "OBSERVABILITY_REPORT",
+          "PERF_INTEL",
+          "RESILIENCE_REPORT"
+        ]
+      },
+      {
+        "module": "decide",
+        "depth": "full",
+        "capabilities": [
+          "release_core",
+          "release_extended",
+          "release_advanced"
+        ],
+        "deliverables": [
+          "Execution Report",
+          "Pipeline",
+          "Provisioning",
+          "Digital Twin",
+          "Optimized Suite",
+          "Feature Flags",
+          "Event Driven",
+          "Exploratory",
+          "UX",
+          "Release Decision",
+          "Release Package",
+          "Impact",
+          "Business Impact",
+          "ROI",
+          "Trend",
+          "Critic Report",
+          "I18N"
+        ],
+        "artifacts": [
+          "EXECUTION_REPORT",
+          "PIPELINE_REPORT",
+          "PROVISION_REPORT",
+          "TWIN_REPORT",
+          "OPTIMIZED_SUITE",
+          "FEATURE_FLAG_REPORT",
+          "EVENT_REPORT",
+          "EXPLORATORY_REPORT",
+          "UX_REPORT",
+          "RELEASE_DECISION",
+          "RELEASE_PACKAGE",
+          "IMPACT_REPORT",
+          "BUSINESS_IMPACT",
+          "ROI_REPORT",
+          "TREND_REPORT",
+          "CRITIC_REPORT",
+          "I18N_REPORT"
+        ]
+      }
+    ],
+    "artifacts": [
+      "REQUIREMENTS",
+      "RAW_REQUIREMENTS",
+      "API_SPEC",
+      "INGESTION_VALIDATION",
+      "REPO_INTELLIGENCE",
+      "TECH_STACK_REPORT",
+      "REFINED_REQUIREMENTS",
+      "UCC",
+      "TEST_PLAN",
+      "LOGIC_MODEL",
+      "TRACEABILITY_MATRIX",
+      "GOVERNANCE_REPORT",
+      "LIFECYCLE_REPORT",
+      "KNOWLEDGE_GRAPH",
+      "META_INTEL_REPORT",
+      "TEST_CASES",
+      "TEST_DATA",
+      "API_MOCKS",
+      "AUTOMATION_SCRIPTS",
+      "API_AUTOMATION",
+      "API_DESIGN_SPEC",
+      "DB_SCHEMA_DESIGN",
+      "ENGINEERING_CONTRACT",
+      "FRONTEND_CODE",
+      "BACKEND_CODE",
+      "DATABASE_PIPELINE",
+      "SERVICE_MESH",
+      "TDD_CONTRACTS",
+      "REQUIREMENT_CLARITY_REPORT",
+      "MODULE_BOUNDARY_MAP",
+      "TRACEABILITY_MATRIX_P2",
+      "INTEGRATION_DEPENDENCY_MAP",
+      "PERFORMANCE_BUDGET",
+      "SECURITY_CONSTRAINTS",
+      "COMPLIANCE_REQUIREMENTS",
+      "MCP_RECOMMENDATIONS",
+      "HOOK_GUARDRAIL_RECOMMENDATIONS",
+      "REGRESSION_SUITE",
+      "TEST_STRATEGY",
+      "CROSS_BROWSER_CONFIG",
+      "MOBILE_CONFIG",
+      "GRAPHQL_REPORT",
+      "API_VALIDATION_REPORT",
+      "VISUAL_BASELINES",
+      "MICROSERVICES_REPORT",
+      "MUTATION_REPORT",
+      "MIGRATION_REPORT",
+      "LOCATOR_STRATEGY",
+      "HEALING_CONFIG",
+      "PERFORMANCE_REPORT",
+      "SECURITY_REPORT",
+      "CHAOS_REPORT",
+      "DELIVERY_REPORT",
+      "RELIABILITY_REPORT",
+      "SLO_REPORT",
+      "TRACING_REPORT",
+      "ENV_REPORT",
+      "MONITOR_REPORT",
+      "COMPLIANCE_REMEDIATION",
+      "RCA_REPORT",
+      "INCIDENT_REPORT",
+      "OBSERVABILITY_REPORT",
+      "PERF_INTEL",
+      "RESILIENCE_REPORT",
+      "EXECUTION_REPORT",
+      "PIPELINE_REPORT",
+      "PROVISION_REPORT",
+      "TWIN_REPORT",
+      "OPTIMIZED_SUITE",
+      "FEATURE_FLAG_REPORT",
+      "EVENT_REPORT",
+      "EXPLORATORY_REPORT",
+      "UX_REPORT",
+      "RELEASE_DECISION",
+      "RELEASE_PACKAGE",
+      "IMPACT_REPORT",
+      "BUSINESS_IMPACT",
+      "ROI_REPORT",
+      "TREND_REPORT",
+      "CRITIC_REPORT",
+      "I18N_REPORT"
+    ],
+    "artifact_coverage": {
+      "required": 81,
+      "existing": 0,
+      "missing": 81,
+      "required_artifacts": [
+        "REQUIREMENTS",
+        "RAW_REQUIREMENTS",
+        "API_SPEC",
+        "INGESTION_VALIDATION",
+        "REPO_INTELLIGENCE",
+        "TECH_STACK_REPORT",
+        "REFINED_REQUIREMENTS",
+        "UCC",
+        "TEST_PLAN",
+        "LOGIC_MODEL",
+        "TRACEABILITY_MATRIX",
+        "GOVERNANCE_REPORT",
+        "LIFECYCLE_REPORT",
+        "KNOWLEDGE_GRAPH",
+        "META_INTEL_REPORT",
+        "TEST_CASES",
+        "TEST_DATA",
+        "API_MOCKS",
+        "AUTOMATION_SCRIPTS",
+        "API_AUTOMATION",
+        "API_DESIGN_SPEC",
+        "DB_SCHEMA_DESIGN",
+        "ENGINEERING_CONTRACT",
+        "FRONTEND_CODE",
+        "BACKEND_CODE",
+        "DATABASE_PIPELINE",
+        "SERVICE_MESH",
+        "TDD_CONTRACTS",
+        "REQUIREMENT_CLARITY_REPORT",
+        "MODULE_BOUNDARY_MAP",
+        "TRACEABILITY_MATRIX_P2",
+        "INTEGRATION_DEPENDENCY_MAP",
+        "PERFORMANCE_BUDGET",
+        "SECURITY_CONSTRAINTS",
+        "COMPLIANCE_REQUIREMENTS",
+        "MCP_RECOMMENDATIONS",
+        "HOOK_GUARDRAIL_RECOMMENDATIONS",
+        "REGRESSION_SUITE",
+        "TEST_STRATEGY",
+        "CROSS_BROWSER_CONFIG",
+        "MOBILE_CONFIG",
+        "GRAPHQL_REPORT",
+        "API_VALIDATION_REPORT",
+        "VISUAL_BASELINES",
+        "MICROSERVICES_REPORT",
+        "MUTATION_REPORT",
+        "MIGRATION_REPORT",
+        "LOCATOR_STRATEGY",
+        "HEALING_CONFIG",
+        "PERFORMANCE_REPORT",
+        "SECURITY_REPORT",
+        "CHAOS_REPORT",
+        "DELIVERY_REPORT",
+        "RELIABILITY_REPORT",
+        "SLO_REPORT",
+        "TRACING_REPORT",
+        "ENV_REPORT",
+        "MONITOR_REPORT",
+        "COMPLIANCE_REMEDIATION",
+        "RCA_REPORT",
+        "INCIDENT_REPORT",
+        "OBSERVABILITY_REPORT",
+        "PERF_INTEL",
+        "RESILIENCE_REPORT",
+        "EXECUTION_REPORT",
+        "PIPELINE_REPORT",
+        "PROVISION_REPORT",
+        "TWIN_REPORT",
+        "OPTIMIZED_SUITE",
+        "FEATURE_FLAG_REPORT",
+        "EVENT_REPORT",
+        "EXPLORATORY_REPORT",
+        "UX_REPORT",
+        "RELEASE_DECISION",
+        "RELEASE_PACKAGE",
+        "IMPACT_REPORT",
+        "BUSINESS_IMPACT",
+        "ROI_REPORT",
+        "TREND_REPORT",
+        "CRITIC_REPORT",
+        "I18N_REPORT"
+      ],
+      "existing_artifacts": [],
+      "missing_artifacts": [
+        "REQUIREMENTS",
+        "RAW_REQUIREMENTS",
+        "API_SPEC",
+        "INGESTION_VALIDATION",
+        "REPO_INTELLIGENCE",
+        "TECH_STACK_REPORT",
+        "REFINED_REQUIREMENTS",
+        "UCC",
+        "TEST_PLAN",
+        "LOGIC_MODEL",
+        "TRACEABILITY_MATRIX",
+        "GOVERNANCE_REPORT",
+        "LIFECYCLE_REPORT",
+        "KNOWLEDGE_GRAPH",
+        "META_INTEL_REPORT",
+        "TEST_CASES",
+        "TEST_DATA",
+        "API_MOCKS",
+        "AUTOMATION_SCRIPTS",
+        "API_AUTOMATION",
+        "API_DESIGN_SPEC",
+        "DB_SCHEMA_DESIGN",
+        "ENGINEERING_CONTRACT",
+        "FRONTEND_CODE",
+        "BACKEND_CODE",
+        "DATABASE_PIPELINE",
+        "SERVICE_MESH",
+        "TDD_CONTRACTS",
+        "REQUIREMENT_CLARITY_REPORT",
+        "MODULE_BOUNDARY_MAP",
+        "TRACEABILITY_MATRIX_P2",
+        "INTEGRATION_DEPENDENCY_MAP",
+        "PERFORMANCE_BUDGET",
+        "SECURITY_CONSTRAINTS",
+        "COMPLIANCE_REQUIREMENTS",
+        "MCP_RECOMMENDATIONS",
+        "HOOK_GUARDRAIL_RECOMMENDATIONS",
+        "REGRESSION_SUITE",
+        "TEST_STRATEGY",
+        "CROSS_BROWSER_CONFIG",
+        "MOBILE_CONFIG",
+        "GRAPHQL_REPORT",
+        "API_VALIDATION_REPORT",
+        "VISUAL_BASELINES",
+        "MICROSERVICES_REPORT",
+        "MUTATION_REPORT",
+        "MIGRATION_REPORT",
+        "LOCATOR_STRATEGY",
+        "HEALING_CONFIG",
+        "PERFORMANCE_REPORT",
+        "SECURITY_REPORT",
+        "CHAOS_REPORT",
+        "DELIVERY_REPORT",
+        "RELIABILITY_REPORT",
+        "SLO_REPORT",
+        "TRACING_REPORT",
+        "ENV_REPORT",
+        "MONITOR_REPORT",
+        "COMPLIANCE_REMEDIATION",
+        "RCA_REPORT",
+        "INCIDENT_REPORT",
+        "OBSERVABILITY_REPORT",
+        "PERF_INTEL",
+        "RESILIENCE_REPORT",
+        "EXECUTION_REPORT",
+        "PIPELINE_REPORT",
+        "PROVISION_REPORT",
+        "TWIN_REPORT",
+        "OPTIMIZED_SUITE",
+        "FEATURE_FLAG_REPORT",
+        "EVENT_REPORT",
+        "EXPLORATORY_REPORT",
+        "UX_REPORT",
+        "RELEASE_DECISION",
+        "RELEASE_PACKAGE",
+        "IMPACT_REPORT",
+        "BUSINESS_IMPACT",
+        "ROI_REPORT",
+        "TREND_REPORT",
+        "CRITIC_REPORT",
+        "I18N_REPORT"
+      ]
+    },
+    "configured_agents": [
+      "ingestor",
+      "clarifier",
+      "synthesis_initial",
+      "governor",
+      "planning_agent",
+      "logician",
+      "agent_2",
+      "api_coder",
+      "api_mock",
+      "api_validation",
+      "architect",
+      "auditor",
+      "automation_forge",
+      "backend_forge",
+      "biz_impact",
+      "chaos",
+      "compliance_remediation",
+      "creator",
+      "critic",
+      "cross_browser",
+      "data_builder",
+      "data_pipeline",
+      "database_forge",
+      "delivery",
+      "digital_twin",
+      "db_schema",
+      "engineering_contract",
+      "env_consistency",
+      "env_provisioner",
+      "event_driven",
+      "exploratory",
+      "feature_flag",
+      "frontend_forge",
+      "graphql_validator",
+      "i18n_testing",
+      "inc_remed",
+      "knowledge_graph",
+      "lifecycle",
+      "locator",
+      "meta_intel",
+      "microservices",
+      "migration",
+      "mobile_testing",
+      "monitor",
+      "mutation",
+      "obs_intel",
+      "perf_intel",
+      "performance",
+      "rca_intel",
+      "regression",
+      "rel_risk",
+      "release_commander",
+      "reliability_engineering",
+      "roi_intel",
+      "run_orchestrator",
+      "security",
+      "self_healing",
+      "api_design",
+      "slo",
+      "suite_optimization",
+      "sys_resil",
+      "tdd_contract",
+      "test_impact",
+      "tracing",
+      "trend_analyst",
+      "ux_intelligence",
+      "visual_intel",
+      "validate_ingestion",
+      "repository_intelligence",
+      "tech_stack_analysis",
+      "requirement_clarifier_p2",
+      "synthesis_optimizer_p2",
+      "traceability_auditor_p2",
+      "api_dependency_mapper",
+      "performance_architect_p2",
+      "security_intelligence_p2",
+      "compliance_governor_p2",
+      "hook_guardrails_advisor",
+      "mcp_advisor",
+      "compose",
+      "synthesis_final",
+      "test_case_factory"
+    ],
+    "eligible_agents": [
+      "ingestor",
+      "clarifier",
+      "synthesis_initial",
+      "governor",
+      "planning_agent",
+      "logician",
+      "test_case_factory",
+      "compose",
+      "synthesis_final",
+      "repository_intelligence",
+      "tech_stack_analysis",
+      "api_coder",
+      "api_mock",
+      "api_validation",
+      "automation_forge",
+      "creator",
+      "cross_browser",
+      "data_builder",
+      "regression",
+      "validate_ingestion",
+      "backend_forge",
+      "database_forge",
+      "frontend_forge",
+      "data_pipeline",
+      "digital_twin",
+      "env_consistency",
+      "env_provisioner",
+      "event_driven",
+      "exploratory",
+      "feature_flag",
+      "reliability_engineering",
+      "slo",
+      "suite_optimization",
+      "tracing",
+      "ux_intelligence",
+      "chaos",
+      "performance",
+      "security",
+      "auditor",
+      "agent_2",
+      "api_dependency_mapper",
+      "api_design",
+      "architect",
+      "compliance_governor_p2",
+      "db_schema",
+      "engineering_contract",
+      "graphql_validator",
+      "hook_guardrails_advisor",
+      "mcp_advisor",
+      "microservices",
+      "mobile_testing",
+      "performance_architect_p2",
+      "requirement_clarifier_p2",
+      "security_intelligence_p2",
+      "synthesis_optimizer_p2",
+      "tdd_contract",
+      "traceability_auditor_p2",
+      "visual_intel",
+      "delivery",
+      "lifecycle",
+      "run_orchestrator",
+      "biz_impact",
+      "compliance_remediation",
+      "monitor",
+      "rel_risk",
+      "release_commander",
+      "roi_intel",
+      "test_impact",
+      "trend_analyst",
+      "knowledge_graph",
+      "meta_intel",
+      "locator",
+      "migration",
+      "mutation",
+      "self_healing",
+      "critic",
+      "i18n_testing",
+      "inc_remed",
+      "obs_intel",
+      "perf_intel",
+      "rca_intel",
+      "sys_resil"
+    ],
+    "bypass_candidates": [],
+    "system_agents": [
+      "compose",
+      "synthesis_final",
+      "test_case_factory"
+    ],
+    "core_agents": [
+      "ingestor",
+      "clarifier",
+      "synthesis_initial",
+      "governor",
+      "planning_agent",
+      "logician"
+    ],
+    "dependency_expansion": [],
+    "execution_groups": [
+      {
+        "group": "core_foundation",
+        "members": [
+          "ingestor",
+          "clarifier",
+          "synthesis_initial",
+          "governor",
+          "planning_agent",
+          "logician"
+        ],
+        "score": 210,
+        "mandatory": true
+      },
+      {
+        "group": "test_case_factory",
+        "members": [
+          "test_case_factory"
+        ],
+        "score": 175,
+        "mandatory": true
+      },
+      {
+        "group": "compose",
+        "members": [
+          "compose"
+        ],
+        "score": 155,
+        "mandatory": true
+      },
+      {
+        "group": "synthesis_final",
+        "members": [
+          "synthesis_final"
+        ],
+        "score": 155,
+        "mandatory": true
+      },
+      {
+        "group": "repository_intelligence",
+        "members": [
+          "repository_intelligence"
+        ],
+        "score": 170,
+        "mandatory": false
+      },
+      {
+        "group": "tech_stack_analysis",
+        "members": [
+          "tech_stack_analysis"
+        ],
+        "score": 170,
+        "mandatory": false
+      },
+      {
+        "group": "test_generation",
+        "members": [
+          "api_coder",
+          "api_mock",
+          "api_validation",
+          "automation_forge",
+          "creator",
+          "cross_browser",
+          "data_builder",
+          "regression"
+        ],
+        "score": 170,
+        "mandatory": false
+      },
+      {
+        "group": "validate_ingestion",
+        "members": [
+          "validate_ingestion"
+        ],
+        "score": 170,
+        "mandatory": false
+      },
+      {
+        "group": "backend_forge",
+        "members": [
+          "backend_forge"
+        ],
+        "score": 168,
+        "mandatory": false
+      },
+      {
+        "group": "database_forge",
+        "members": [
+          "database_forge"
+        ],
+        "score": 168,
+        "mandatory": false
+      },
+      {
+        "group": "frontend_forge",
+        "members": [
+          "frontend_forge"
+        ],
+        "score": 168,
+        "mandatory": false
+      },
+      {
+        "group": "data_pipeline",
+        "members": [
+          "data_pipeline"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "digital_twin",
+        "members": [
+          "digital_twin"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "env_consistency",
+        "members": [
+          "env_consistency"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "env_provisioner",
+        "members": [
+          "env_provisioner"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "event_driven",
+        "members": [
+          "event_driven"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "exploratory",
+        "members": [
+          "exploratory"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "feature_flag",
+        "members": [
+          "feature_flag"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "reliability_engineering",
+        "members": [
+          "reliability_engineering"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "slo",
+        "members": [
+          "slo"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "suite_optimization",
+        "members": [
+          "suite_optimization"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "tracing",
+        "members": [
+          "tracing"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "ux_intelligence",
+        "members": [
+          "ux_intelligence"
+        ],
+        "score": 165,
+        "mandatory": false
+      },
+      {
+        "group": "certify_quality",
+        "members": [
+          "chaos",
+          "performance",
+          "security"
+        ],
+        "score": 156,
+        "mandatory": false
+      },
+      {
+        "group": "auditor",
+        "members": [
+          "auditor"
+        ],
+        "score": 155,
+        "mandatory": false
+      },
+      {
+        "group": "agent_2",
+        "members": [
+          "agent_2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "api_dependency_mapper",
+        "members": [
+          "api_dependency_mapper"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "api_design",
+        "members": [
+          "api_design"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "architect",
+        "members": [
+          "architect"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "compliance_governor_p2",
+        "members": [
+          "compliance_governor_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "db_schema",
+        "members": [
+          "db_schema"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "engineering_contract",
+        "members": [
+          "engineering_contract"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "graphql_validator",
+        "members": [
+          "graphql_validator"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "hook_guardrails_advisor",
+        "members": [
+          "hook_guardrails_advisor"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "mcp_advisor",
+        "members": [
+          "mcp_advisor"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "microservices",
+        "members": [
+          "microservices"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "mobile_testing",
+        "members": [
+          "mobile_testing"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "performance_architect_p2",
+        "members": [
+          "performance_architect_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "requirement_clarifier_p2",
+        "members": [
+          "requirement_clarifier_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "security_intelligence_p2",
+        "members": [
+          "security_intelligence_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "synthesis_optimizer_p2",
+        "members": [
+          "synthesis_optimizer_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "tdd_contract",
+        "members": [
+          "tdd_contract"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "traceability_auditor_p2",
+        "members": [
+          "traceability_auditor_p2"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "visual_intel",
+        "members": [
+          "visual_intel"
+        ],
+        "score": 153,
+        "mandatory": false
+      },
+      {
+        "group": "delivery_chain",
+        "members": [
+          "delivery",
+          "lifecycle",
+          "run_orchestrator"
+        ],
+        "score": 152,
+        "mandatory": false
+      },
+      {
+        "group": "biz_impact",
+        "members": [
+          "biz_impact"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "compliance_remediation",
+        "members": [
+          "compliance_remediation"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "monitor",
+        "members": [
+          "monitor"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "rel_risk",
+        "members": [
+          "rel_risk"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "release_commander",
+        "members": [
+          "release_commander"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "roi_intel",
+        "members": [
+          "roi_intel"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "test_impact",
+        "members": [
+          "test_impact"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "trend_analyst",
+        "members": [
+          "trend_analyst"
+        ],
+        "score": 150,
+        "mandatory": false
+      },
+      {
+        "group": "knowledge_graph",
+        "members": [
+          "knowledge_graph"
+        ],
+        "score": 145,
+        "mandatory": false
+      },
+      {
+        "group": "meta_intel",
+        "members": [
+          "meta_intel"
+        ],
+        "score": 145,
+        "mandatory": false
+      },
+      {
+        "group": "locator",
+        "members": [
+          "locator"
+        ],
+        "score": 143,
+        "mandatory": false
+      },
+      {
+        "group": "migration",
+        "members": [
+          "migration"
+        ],
+        "score": 143,
+        "mandatory": false
+      },
+      {
+        "group": "mutation",
+        "members": [
+          "mutation"
+        ],
+        "score": 143,
+        "mandatory": false
+      },
+      {
+        "group": "self_healing",
+        "members": [
+          "self_healing"
+        ],
+        "score": 143,
+        "mandatory": false
+      },
+      {
+        "group": "critic",
+        "members": [
+          "critic"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "i18n_testing",
+        "members": [
+          "i18n_testing"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "inc_remed",
+        "members": [
+          "inc_remed"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "obs_intel",
+        "members": [
+          "obs_intel"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "perf_intel",
+        "members": [
+          "perf_intel"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "rca_intel",
+        "members": [
+          "rca_intel"
+        ],
+        "score": 140,
+        "mandatory": false
+      },
+      {
+        "group": "sys_resil",
+        "members": [
+          "sys_resil"
+        ],
+        "score": 140,
+        "mandatory": false
+      }
+    ],
+    "agent_definitions": [
+      {
+        "id": "Ingestor",
+        "key": "ingestor",
+        "label": "Requirements Ingestor",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 110,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Clarifier",
+        "key": "clarifier",
+        "label": "Requirement Clarifier",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 110,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Optimizer",
+        "key": "synthesis_initial",
+        "label": "Synthesis Optimizer",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 105,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Governor",
+        "key": "governor",
+        "label": "Compliance Governor",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 105,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Planner",
+        "key": "planning_agent",
+        "label": "Intelligent Test Planner",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 105,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Logician",
+        "key": "logician",
+        "label": "Systems Logician",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 105,
+        "mandatory": true,
+        "dependency_level": "core",
+        "execution_group": "core_foundation",
+        "phase": 1,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Factory",
+        "key": "test_case_factory",
+        "label": "Test Case Factory",
+        "module": "system",
+        "modules": [
+          "system"
+        ],
+        "category": "system",
+        "priority": 120,
+        "mandatory": true,
+        "dependency_level": "dependency",
+        "execution_group": "test_case_factory",
+        "phase": 0,
+        "tier": "system",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Writer",
+        "key": "compose",
+        "label": "Plan Composer",
+        "module": "system",
+        "modules": [
+          "system"
+        ],
+        "category": "system",
+        "priority": 100,
+        "mandatory": true,
+        "dependency_level": "dependency",
+        "execution_group": "compose",
+        "phase": 0,
+        "tier": "system",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SynthesisFinal",
+        "key": "synthesis_final",
+        "label": "Synthesis Final",
+        "module": "system",
+        "modules": [
+          "system"
+        ],
+        "category": "system",
+        "priority": 100,
+        "mandatory": true,
+        "dependency_level": "dependency",
+        "execution_group": "synthesis_final",
+        "phase": 0,
+        "tier": "system",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RepoIntelligence",
+        "key": "repository_intelligence",
+        "label": "Repository Intelligence",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 100,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "repository_intelligence",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "TechStackAnalysis",
+        "key": "tech_stack_analysis",
+        "label": "Tech Stack Analysis",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 100,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "tech_stack_analysis",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ApiCoder",
+        "key": "api_coder",
+        "label": "API Automation Generator",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 94,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ApiMock",
+        "key": "api_mock",
+        "label": "API Mock Virtualizer",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 94,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ApiValidation",
+        "key": "api_validation",
+        "label": "API Validation & Dependency",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 92,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "AutomationForge",
+        "key": "automation_forge",
+        "label": "Automation Forge",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 94,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Creator",
+        "key": "creator",
+        "label": "Test Case Creator",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 100,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "CrossBrowser",
+        "key": "cross_browser",
+        "label": "Cross-Browser Agent",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 88,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "DataBuilder",
+        "key": "data_builder",
+        "label": "Test Data Builder",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Regression",
+        "key": "regression",
+        "label": "Regression Prioritization",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 90,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_generation",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ValidateIngestion",
+        "key": "validate_ingestion",
+        "label": "Ingestion Validation",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 100,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "validate_ingestion",
+        "phase": 1,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "BackendForge",
+        "key": "backend_forge",
+        "label": "Backend Forge",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 98,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "backend_forge",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "DatabaseForge",
+        "key": "database_forge",
+        "label": "Database Forge",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 98,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "database_forge",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "FrontendForge",
+        "key": "frontend_forge",
+        "label": "Frontend Forge",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 98,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "frontend_forge",
+        "phase": 2,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "DataPipeline",
+        "key": "data_pipeline",
+        "label": "Data Pipeline Agent",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "data_pipeline",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "DigitalTwin",
+        "key": "digital_twin",
+        "label": "Digital Twin Simulation",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "digital_twin",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "EnvConsistency",
+        "key": "env_consistency",
+        "label": "Environment Consistency",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "env_consistency",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "EnvProvisioner",
+        "key": "env_provisioner",
+        "label": "Environment Provisioner",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "env_provisioner",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "EventDriven",
+        "key": "event_driven",
+        "label": "Event-Driven Testing",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "event_driven",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Exploratory",
+        "key": "exploratory",
+        "label": "Exploratory Assistant",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "exploratory",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "FeatureFlag",
+        "key": "feature_flag",
+        "label": "Feature Flag Testing",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "feature_flag",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ReliabilityEng",
+        "key": "reliability_engineering",
+        "label": "Reliability Engineering",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "reliability_engineering",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SLO",
+        "key": "slo",
+        "label": "SLA/SLO Compliance",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "slo",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SuiteOptimizer",
+        "key": "suite_optimization",
+        "label": "Test Suite Optimizer",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "suite_optimization",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Tracing",
+        "key": "tracing",
+        "label": "Distributed Tracing",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "tracing",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "UxIntel",
+        "key": "ux_intelligence",
+        "label": "UX Intelligence Agent",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 95,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "ux_intelligence",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Chaos",
+        "key": "chaos",
+        "label": "Chaos Engineering",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 84,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "certify_quality",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Performance",
+        "key": "performance",
+        "label": "Performance Architect",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 86,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "certify_quality",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Security",
+        "key": "security",
+        "label": "Security Intelligence",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 86,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "certify_quality",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Auditor",
+        "key": "auditor",
+        "label": "Traceability Auditor",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 85,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "auditor",
+        "phase": 1,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Agent2",
+        "key": "agent_2",
+        "label": "Test Strategy Builder",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "agent_2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "APIDependencyMapper",
+        "key": "api_dependency_mapper",
+        "label": "API Dependency Mapper",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "api_dependency_mapper",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ApiDesign",
+        "key": "api_design",
+        "label": "API Designer",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "api_design",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Architect",
+        "key": "architect",
+        "label": "Solution Architect",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "architect",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ComplianceGovernor",
+        "key": "compliance_governor_p2",
+        "label": "Compliance Governor",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "compliance_governor_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "DbSchema",
+        "key": "db_schema",
+        "label": "Database Architect",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "db_schema",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Contractor",
+        "key": "engineering_contract",
+        "label": "Engineering Contract",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "engineering_contract",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "GraphQL",
+        "key": "graphql_validator",
+        "label": "GraphQL Validation",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "graphql_validator",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "HookGuardrailsAdvisor",
+        "key": "hook_guardrails_advisor",
+        "label": "Hook Guardrails Advisor",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "hook_guardrails_advisor",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "MCPAdvisor",
+        "key": "mcp_advisor",
+        "label": "MCP Server Advisor",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "mcp_advisor",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Microservices",
+        "key": "microservices",
+        "label": "Microservices Intel",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "microservices",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "MobileTesting",
+        "key": "mobile_testing",
+        "label": "Mobile App Testing",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "mobile_testing",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "PerformanceArchitect",
+        "key": "performance_architect_p2",
+        "label": "Performance Architect",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "performance_architect_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RequirementClarifier",
+        "key": "requirement_clarifier_p2",
+        "label": "Requirement Clarifier",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "requirement_clarifier_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SecurityIntelligence",
+        "key": "security_intelligence_p2",
+        "label": "Security Intelligence",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "security_intelligence_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SynthesisOptimizer",
+        "key": "synthesis_optimizer_p2",
+        "label": "Synthesis Optimizer",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "synthesis_optimizer_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "TddContract",
+        "key": "tdd_contract",
+        "label": "TDD Contract Generator",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "tdd_contract",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "TraceabilityAuditor",
+        "key": "traceability_auditor_p2",
+        "label": "Traceability Auditor",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "traceability_auditor_p2",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "VisualIntel",
+        "key": "visual_intel",
+        "label": "Visual Testing Intelligence",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 83,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "visual_intel",
+        "phase": 2,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Delivery",
+        "key": "delivery",
+        "label": "Progressive Delivery",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 82,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "delivery_chain",
+        "phase": 3,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Lifecycle",
+        "key": "lifecycle",
+        "label": "Lifecycle Tracker",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "delivery_chain",
+        "phase": 1,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Orchestrator",
+        "key": "run_orchestrator",
+        "label": "Execution Orchestrator",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "delivery_chain",
+        "phase": 4,
+        "tier": "rapid",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "BizImpact",
+        "key": "biz_impact",
+        "label": "Business Impact Intel",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "biz_impact",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Remediation",
+        "key": "compliance_remediation",
+        "label": "Autonomous Compliance",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "compliance_remediation",
+        "phase": 3,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Monitor",
+        "key": "monitor",
+        "label": "Monitor QA History",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "monitor",
+        "phase": 3,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RelRisk",
+        "key": "rel_risk",
+        "label": "Release Risk & Decision",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "rel_risk",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RelCommander",
+        "key": "release_commander",
+        "label": "Release Commander",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "release_commander",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RoiIntel",
+        "key": "roi_intel",
+        "label": "ROI & Engineering Economics",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "roi_intel",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "TestImpact",
+        "key": "test_impact",
+        "label": "Test Impact Intelligence",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "test_impact",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "TrendAnalyst",
+        "key": "trend_analyst",
+        "label": "Trend Analyst",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 80,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "trend_analyst",
+        "phase": 4,
+        "tier": "standard",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "KnowledgeGraph",
+        "key": "knowledge_graph",
+        "label": "Engineering Knowledge Graph",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 75,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "knowledge_graph",
+        "phase": 1,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "MetaIntel",
+        "key": "meta_intel",
+        "label": "Meta Intelligence Agent",
+        "module": "ingest",
+        "modules": [
+          "ingest"
+        ],
+        "category": "core_foundation",
+        "priority": 75,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "meta_intel",
+        "phase": 1,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Locator",
+        "key": "locator",
+        "label": "Locator Intelligence",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 73,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "locator",
+        "phase": 2,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Migration",
+        "key": "migration",
+        "label": "Automation Migration Agent",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 73,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "migration",
+        "phase": 2,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Mutation",
+        "key": "mutation",
+        "label": "Mutation Testing Assistant",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 73,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "mutation",
+        "phase": 2,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SelfHealing",
+        "key": "self_healing",
+        "label": "Self-Healing Gateway",
+        "module": "forge",
+        "modules": [
+          "forge"
+        ],
+        "category": "test_generation",
+        "priority": 73,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "self_healing",
+        "phase": 2,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "Critic",
+        "key": "critic",
+        "label": "Quality Critic",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "critic",
+        "phase": 4,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "i18n",
+        "key": "i18n_testing",
+        "label": "i18n Assistant",
+        "module": "decide",
+        "modules": [
+          "decide"
+        ],
+        "category": "delivery_chain",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "i18n_testing",
+        "phase": 4,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "IncRemed",
+        "key": "inc_remed",
+        "label": "Incident Remediation",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "inc_remed",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "ObsIntel",
+        "key": "obs_intel",
+        "label": "Observability & Quality Intel",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "obs_intel",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "PerfIntel",
+        "key": "perf_intel",
+        "label": "Performance Intelligence",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "perf_intel",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "RcaIntel",
+        "key": "rca_intel",
+        "label": "Autonomous RCA",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "rca_intel",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      },
+      {
+        "id": "SysResil",
+        "key": "sys_resil",
+        "label": "System Resilience",
+        "module": "certify",
+        "modules": [
+          "certify"
+        ],
+        "category": "certify_quality",
+        "priority": 70,
+        "mandatory": false,
+        "dependency_level": "dependency",
+        "execution_group": "sys_resil",
+        "phase": 3,
+        "tier": "full",
+        "selected_modules": [
+          "ingest",
+          "forge",
+          "certify",
+          "decide"
+        ],
+        "role": "qa",
+        "depth": "full"
+      }
+    ],
+    "final_agents": [
+      "ingestor",
+      "clarifier",
+      "synthesis_initial",
+      "governor",
+      "planning_agent",
+      "logician",
+      "test_case_factory",
+      "compose",
+      "synthesis_final",
+      "repository_intelligence",
+      "tech_stack_analysis",
+      "api_coder",
+      "api_mock",
+      "api_validation",
+      "automation_forge",
+      "creator",
+      "cross_browser",
+      "data_builder",
+      "regression",
+      "validate_ingestion",
+      "backend_forge",
+      "database_forge",
+      "frontend_forge",
+      "data_pipeline",
+      "digital_twin",
+      "env_consistency",
+      "env_provisioner",
+      "event_driven",
+      "exploratory",
+      "feature_flag",
+      "reliability_engineering",
+      "slo",
+      "suite_optimization",
+      "tracing",
+      "ux_intelligence",
+      "chaos",
+      "performance",
+      "security",
+      "auditor",
+      "agent_2",
+      "api_dependency_mapper",
+      "api_design",
+      "architect",
+      "compliance_governor_p2",
+      "db_schema",
+      "engineering_contract",
+      "graphql_validator",
+      "hook_guardrails_advisor",
+      "mcp_advisor",
+      "microservices",
+      "mobile_testing",
+      "performance_architect_p2",
+      "requirement_clarifier_p2",
+      "security_intelligence_p2",
+      "synthesis_optimizer_p2",
+      "tdd_contract",
+      "traceability_auditor_p2",
+      "visual_intel",
+      "delivery",
+      "lifecycle",
+      "run_orchestrator",
+      "biz_impact",
+      "compliance_remediation",
+      "monitor",
+      "rel_risk",
+      "release_commander",
+      "roi_intel",
+      "test_impact",
+      "trend_analyst",
+      "knowledge_graph",
+      "meta_intel",
+      "locator",
+      "migration",
+      "mutation",
+      "self_healing",
+      "critic",
+      "i18n_testing",
+      "inc_remed",
+      "obs_intel",
+      "perf_intel",
+      "rca_intel",
+      "sys_resil"
+    ],
+    "active_agents": {
+      "agent_2": "auto",
+      "api_coder": "auto",
+      "api_dependency_mapper": "auto",
+      "api_design": "auto",
+      "api_mock": "auto",
+      "api_validation": "auto",
+      "architect": "auto",
+      "auditor": "auto",
+      "automation_forge": "auto",
+      "backend_forge": "auto",
+      "biz_impact": "auto",
+      "chaos": "auto",
+      "clarifier": "auto",
+      "compliance_governor_p2": "auto",
+      "compliance_remediation": "auto",
+      "compose": "auto",
+      "creator": "auto",
+      "critic": "auto",
+      "cross_browser": "auto",
+      "data_builder": "auto",
+      "data_pipeline": "auto",
+      "database_forge": "auto",
+      "db_schema": "auto",
+      "delivery": "auto",
+      "digital_twin": "auto",
+      "engineering_contract": "auto",
+      "env_consistency": "auto",
+      "env_provisioner": "auto",
+      "event_driven": "auto",
+      "exploratory": "auto",
+      "feature_flag": "auto",
+      "frontend_forge": "auto",
+      "governor": "auto",
+      "graphql_validator": "auto",
+      "hook_guardrails_advisor": "auto",
+      "i18n_testing": "auto",
+      "inc_remed": "auto",
+      "ingestor": "auto",
+      "knowledge_graph": "auto",
+      "lifecycle": "auto",
+      "locator": "auto",
+      "logician": "auto",
+      "mcp_advisor": "auto",
+      "meta_intel": "auto",
+      "microservices": "auto",
+      "migration": "auto",
+      "mobile_testing": "auto",
+      "monitor": "auto",
+      "mutation": "auto",
+      "obs_intel": "auto",
+      "perf_intel": "auto",
+      "performance": "auto",
+      "performance_architect_p2": "auto",
+      "planning_agent": "auto",
+      "rca_intel": "auto",
+      "regression": "auto",
+      "rel_risk": "auto",
+      "release_commander": "auto",
+      "reliability_engineering": "auto",
+      "repository_intelligence": "auto",
+      "requirement_clarifier_p2": "auto",
+      "roi_intel": "auto",
+      "run_orchestrator": "auto",
+      "security": "auto",
+      "security_intelligence_p2": "auto",
+      "self_healing": "auto",
+      "slo": "auto",
+      "suite_optimization": "auto",
+      "synthesis_final": "auto",
+      "synthesis_initial": "auto",
+      "synthesis_optimizer_p2": "auto",
+      "sys_resil": "auto",
+      "tdd_contract": "auto",
+      "tech_stack_analysis": "auto",
+      "test_case_factory": "auto",
+      "test_impact": "auto",
+      "traceability_auditor_p2": "auto",
+      "tracing": "auto",
+      "trend_analyst": "auto",
+      "ux_intelligence": "auto",
+      "validate_ingestion": "auto",
+      "visual_intel": "auto"
+    },
+    "telemetry": {
+      "budget": 999,
+      "selected": 82,
+      "dependency_added": 0,
+      "group_added": 0,
+      "bypassed": 0
+    },
+    "metrics": {
+      "budget": 999,
+      "selected": 82,
+      "dependency_added": 0,
+      "group_added": 0,
+      "bypassed": 0
+    },
+    "counts": {
+      "core": 6,
+      "supporting": 73,
+      "dependencies": 0,
+      "system": 3,
+      "final": 82,
+      "budget": 999,
+      "selected": 82,
+      "dependency_added": 0,
+      "group_added": 0,
+      "bypassed": 0,
+      "executed": 82
+    }
+  }
+}

@@ -1,0 +1,129 @@
+# TeamFlow — Enterprise Project & Task Management Platform
+
+
+## Authentication Section
+- [REQ-001] Users can register an account with name, email, and password.
+- [REQ-002] Users can log in to the platform.
+- [REQ-003] Users can log out of the platform.
+- [REQ-004] Users can retrieve their current profile information.
+- [REQ-005] User accounts are password-protected.
+- [REQ-006] User sessions are authenticated.
+- [REQ-007] Unauthorized users cannot access protected functionality.
+
+## User Profiles Section
+- [REQ-008] User profile contains name, email, role, and account creation date.
+- [REQ-009] Users can view their profile.
+- [REQ-010] Users can update their name and basic profile information.
+- [REQ-011] Users can change their password.
+- [REQ-012] Administrators can view and manage users.
+
+## Projects Section
+- [REQ-013] A project contains project name, description, owner, status, team members, creation date, and last updated date.
+- [REQ-014] Supported project statuses are PLANNING, ACTIVE, COMPLETED, and ARCHIVED.
+- [REQ-015] Project managers can create projects.
+- [REQ-016] Project managers can edit projects.
+- [REQ-017] Project managers can view projects they manage.
+- [REQ-018] Project managers can archive projects.
+- [REQ-019] A project must have an owner.
+
+## Project Membership Section
+- [REQ-020] Project managers can add users to a project.
+- [REQ-021] Project managers can view project members.
+- [REQ-022] Project managers can remove users from a project.
+- [REQ-023] A user may belong to multiple projects.
+- [REQ-024] The application prevents invalid or duplicate project memberships.
+
+## Task Management Section
+- [REQ-025] A task contains title, description, project, assignee, status, priority, due date, creation date, and last updated date.
+- [REQ-026] Supported task statuses are TODO, IN_PROGRESS, BLOCKED, and DONE.
+- [REQ-027] Supported priorities are LOW, MEDIUM, HIGH, and URGENT.
+- [REQ-028] Project managers can create tasks.
+- [REQ-029] Project managers can assign tasks to team members.
+- [REQ-030] Project managers can reassign tasks.
+- [REQ-031] Project managers can edit tasks.
+- [REQ-032] Project managers can delete tasks.
+- [REQ-033] Project managers can change task status.
+- [REQ-034] Project managers can change task priority.
+- [REQ-035] Project managers can set or change task due dates.
+- [REQ-036] Team members can update the status of their assigned tasks.
+
+## Task Details Section
+- [REQ-037] Task details view displays task title, description, project, assignee, status, priority, due date, creation date, last updated date, and comments.
+- [REQ-038] The interface clearly shows current status, current priority, assignee, whether the task is overdue, and whether the task is blocked.
+
+## Task Comments Section
+- [REQ-039] A comment contains author, comment text, creation date, and last updated date.
+- [REQ-040] Users can add comments to tasks.
+- [REQ-041] Users can view comments.
+- [REQ-042] Users can edit their own comments.
+- [REQ-043] Users can delete their own comments.
+- [REQ-044] Comments are displayed in chronological order.
+
+## Dashboard Section
+- [REQ-045] The dashboard displays total projects, active projects, total tasks, tasks assigned to the current user, completed tasks, in-progress tasks, blocked tasks, tasks due soon, and recent projects.
+- [REQ-046] Dashboard data is updated when relevant project or task information changes.
+
+## Project Dashboard Section
+- [REQ-047] The project dashboard displays project name, description, status, owner, team members, total tasks, completed tasks, in-progress tasks, blocked tasks, pending tasks, and recent task activity.
+
+## Task Filtering and Sorting Section
+- [REQ-048] Users can filter tasks by status, priority, assignee, and due date.
+- [REQ-049] Users can sort tasks by due date, priority, creation date, and status.
+- [REQ-050] The task list provides useful empty states when no tasks match the selected filters.
+
+## Project and Task Search Section
+- [REQ-051] Users can search projects by project name and description.
+- [REQ-052] Users can search tasks by task title and description.
+- [REQ-053] Search results are clear and easy to navigate.
+
+## Notifications Section
+- [REQ-054] The platform provides notifications for user added to a project, task assigned, task reassigned, task status changed, task marked blocked, task completed, task due soon, and comment added to a task.
+- [REQ-055] Users can view notifications.
+- [REQ-056] Users can mark a notification as read.
+- [REQ-057] Users can mark all notifications as read.
+
+## Project Activity Section
+- [REQ-058] Projects provide an activity history including project created, member added, member removed, task created, task assigned, task reassigned, task status changed, comment added, and task completed.
+
+## Responsive Web Interface Section
+- [REQ-059] The application is responsive for desktop, tablet, and mobile.
+- [REQ-060] The application provides clear loading states, empty states, error states, success feedback, and form validation feedback.
+
+## Project List Section
+- [REQ-061] The project list displays project name, description, status, owner, number of members, and number of tasks.
+
+## Task List Section
+- [REQ-062] The task list displays task title, assignee, status, priority, and due date.
+- [REQ-063] Users can search, filter, sort, and open task details from the task list.
+
+## Task Creation and Editing Section
+- [REQ-064] Project managers have forms for creating and editing tasks.
+- [REQ-065] Task forms support title, description, assignee, status, priority, and due date.
+- [REQ-066] Required fields in task forms are validated.
+
+## Project Creation and Editing Section
+- [REQ-067] Project managers have forms for creating and editing projects.
+- [REQ-068] Project forms support project name, description, and status.
+- [REQ-069] Required fields in project forms are validated.
+
+## Authorization Section
+- [REQ-070] The platform enforces permissions on the server.
+- [REQ-071] Team members cannot manage users.
+- [REQ-072] Team members cannot delete projects.
+- [REQ-073] Team members cannot modify tasks assigned to other users.
+
+## Data Relationships Section
+- [REQ-074] The application maintains consistent relationships between users, projects, project memberships, tasks, task comments, task assignees, and project owners.
+
+## Data Persistence Section
+- [REQ-075] Project, user, task, membership, and comment information persists between application sessions.
+
+## API Requirements Section
+- [REQ-076] The application provides APIs for authentication, users, profiles, projects, project members, tasks, comments, notifications, dashboard statistics, project activity, and health/status.
+- [REQ-077] APIs provide request validation, authentication, authorization, success responses, and error responses.
+
+## Error Handling Section
+- [REQ-078] The application provides consistent error handling with clear error messages and guidance.
+
+## Database Requirements Section
+- [REQ-079] The application persists User, Project, Project Member, Task, Comment, Notification, and Activity entities in the database.

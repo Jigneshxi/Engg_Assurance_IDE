@@ -1,0 +1,102 @@
+{
+  "confidence_bands": [
+    { "name": "STRONG", "minimum_score": 0.8 },
+    { "name": "MODERATE", "minimum_score": 0.6 },
+    { "name": "WEAK", "minimum_score": 0.4 },
+    { "name": "NONE", "minimum_score": 0.0 }
+  ],
+  "memory_types": {
+    "TEMPLATE": {
+      "minimum_score": 0.6,
+      "max_results": 3,
+      "allow_cross_domain": true,
+      "required_domain_score": 0.45,
+      "required_capability_overlap": 0.15,
+      "max_age_days": 3650,
+      "vector_weight": 0.5,
+      "domain_weight": 0.25,
+      "capability_weight": 0.15,
+      "recency_weight": 0.1
+    },
+    "HISTORICAL_PROJECT": {
+      "minimum_score": 0.5,
+      "max_results": 2,
+      "allow_cross_domain": false,
+      "required_domain_score": 0.7,
+      "required_capability_overlap": 0.05,
+      "allow_weak_matches": true,
+      "max_age_days": 730,
+      "vector_weight": 0.4,
+      "domain_weight": 0.25,
+      "capability_weight": 0.2,
+      "recency_weight": 0.15
+    },
+    "ARCHITECTURE_PATTERN": {
+      "minimum_score": 0.6,
+      "max_results": 3,
+      "allow_cross_domain": true,
+      "required_domain_score": 0.35,
+      "required_capability_overlap": 0.2,
+      "max_age_days": 1825,
+      "vector_weight": 0.45,
+      "domain_weight": 0.2,
+      "capability_weight": 0.2,
+      "recency_weight": 0.15
+    },
+    "TEST_STRATEGY": {
+      "minimum_score": 0.75,
+      "max_results": 3,
+      "allow_cross_domain": false,
+      "required_domain_score": 0.6,
+      "required_capability_overlap": 0.3,
+      "max_age_days": 1095,
+      "vector_weight": 0.45,
+      "domain_weight": 0.25,
+      "capability_weight": 0.15,
+      "recency_weight": 0.15
+    },
+    "DOMAIN_KNOWLEDGE": {
+      "minimum_score": 0.75,
+      "max_results": 3,
+      "allow_cross_domain": false,
+      "required_domain_score": 0.65,
+      "required_capability_overlap": 0.25,
+      "max_age_days": 1095,
+      "vector_weight": 0.45,
+      "domain_weight": 0.2,
+      "capability_weight": 0.15,
+      "recency_weight": 0.2
+    },
+    "USER_MEMORY": {
+      "minimum_score": 0.8,
+      "max_results": 2,
+      "allow_cross_domain": false,
+      "required_domain_score": 0.75,
+      "required_capability_overlap": 0.2,
+      "max_age_days": 365,
+      "vector_weight": 0.4,
+      "domain_weight": 0.25,
+      "capability_weight": 0.15,
+      "recency_weight": 0.2
+    }
+  },
+  "type_aliases": {
+    "enterprise_template": "TEMPLATE",
+    "historical_sample": "HISTORICAL_PROJECT",
+    "test_plan": "TEST_STRATEGY",
+    "synthesis_sample": "DOMAIN_KNOWLEDGE"
+  },
+  "default_memory_type": "HISTORICAL_PROJECT",
+  "default": {
+    "minimum_score": 0.5,
+    "max_results": 2,
+    "allow_cross_domain": false,
+    "required_domain_score": 0.5,
+    "required_capability_overlap": 0.05,
+    "max_age_days": 1095,
+    "vector_weight": 0.45,
+    "domain_weight": 0.2,
+    "capability_weight": 0.15,
+    "recency_weight": 0.2
+  }
+}

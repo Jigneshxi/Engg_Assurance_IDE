@@ -1,0 +1,42 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.2
+pydantic-settings==2.1.0
+requests==2.31.0
+python-dotenv==1.0.0
+
+# AI & Agents
+crewai
+langgraph
+langchain
+langchain-community
+langchain-groq
+groq
+google-generativeai==0.8.5
+
+# Data & Persistence
+sqlalchemy==2.0.23
+alembic==1.18.4         # Schema migration version control
+PyMySQL==1.1.2          # MySQL driver (replaces SQLite for production)
+cryptography==42.0.5    # Required by PyMySQL for auth_plugin support
+# psycopg2-binary==2.9.9 (PostgreSQL — not used)
+chromadb==0.4.22
+sentence-transformers==2.2.2
+
+# Document & Content Processing
+python-docx==1.1.0
+markdown==3.5.1
+jinja2==3.1.2
+aiofiles==23.2.1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+PyPDF2==3.0.1
+
+# PDF Generation
+reportlab==4.2.5
+
+# Security & Authentication
+passlib[bcrypt]==1.7.4
+python-jose==3.5.0
+python-multipart==0.0.27

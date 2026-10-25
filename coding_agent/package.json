@@ -1,0 +1,51 @@
+{
+  "name": "ide",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:frontend": "node node_modules/vite/bin/vite.js --config apps/ide-frontend/vite.config.ts --force",
+    "dev:server": "cd server && node server.js",
+    "dev:python": "node packages/python-engine/start.mjs",
+    "dev": "node node_modules/concurrently/dist/bin/index.js \"npm run dev:frontend\" \"npm run dev:server\"",
+    "dev:all": "node node_modules/concurrently/dist/bin/index.js \"npm run dev:frontend\" \"npm run dev:server\" \"npm run dev:python\"",
+    "build": "node node_modules/typescript/bin/tsc -b && node node_modules/vite/bin/vite.js --config apps/ide-frontend/vite.config.ts build",
+    "lint": "oxlint",
+    "preview": "node node_modules/vite/bin/vite.js --config apps/ide-frontend/vite.config.ts preview",
+    "test": "node server/tests/test_startup_regressions.mjs && node server/tests/test_production_hardening.mjs && node server/tests/test_live_validation_repairs.mjs && node server/tests/test_project_contract_orm_resolution.mjs && node server/tests/test_python_environment.mjs && node server/tests/test_test42a_hardening.mjs && node server/tests/test_stack_grounding.mjs && node server/tests/test_assurance_bridge.mjs",
+    "test:bridge": "node server/tests/test_assurance_bridge.mjs",
+    "test:regressions": "node server/tests/test_startup_regressions.mjs && node server/tests/test_production_hardening.mjs && node server/tests/test_live_validation_repairs.mjs && node server/tests/test_project_contract_orm_resolution.mjs && node server/tests/test_python_environment.mjs && node server/tests/test_test42a_hardening.mjs",
+    "test:forensic": "node server/tests/test_test40a_forensic_regressions.mjs",
+    "test:router": "node server/tests/test_router_prefix_validation.mjs",
+    "test:runtime": "node scripts/test_validation_runtime.mjs",
+    "test:startup": "node scripts/smoke_startup.mjs",
+    "setup:python": "node scripts/setup_python.mjs",
+    "test:python": "node scripts/smoke_python.mjs",
+    "test:engine": "node --test tests/engine/*.test.js tests/repair/*.test.js tests/validators/*.test.js",
+    "test:all": "npm run test && npm run test:engine && node server/tests/test_guide2_regression.mjs && node server/tests/test_agent1_planner.mjs && node server/tests/test_test40a_forensic_regressions.mjs"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "dotenv": "^17.4.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lucide-react": "^1.27.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.4",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-win32-x64-msvc": "^1.2.13"
+  }
+}

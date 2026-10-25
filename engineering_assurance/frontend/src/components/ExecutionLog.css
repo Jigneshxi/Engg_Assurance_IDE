@@ -1,0 +1,663 @@
+/**
+ * ================================================================================
+ * EVALUATIONS BY SeQuor — EXECUTION LOG PANEL STYLES
+ * ================================================================================
+ */
+
+/* ── OVERLAY ── */
+.exec-log-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+/* ── PANEL ── */
+.exec-log-panel {
+  width: 94vw;
+  max-width: 1380px;
+  height: 86vh;
+  max-height: 860px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 16px;
+  box-shadow:
+    0 0 60px rgba(99, 102, 241, 0.25),
+    0 25px 50px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px) scale(0.96); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── HEADER ── */
+.exec-log-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(99, 102, 241, 0.08);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.exec-log-header-left, .exec-log-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exec-log-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.exec-log-status-dot.running {
+  background: #10b981;
+  animation: pulse-green 1.2s infinite;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.exec-log-status-dot.done {
+  background: #6366f1;
+  box-shadow: 0 0 8px #6366f1;
+}
+
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+.exec-log-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e2e8f0;
+  letter-spacing: 0.5px;
+}
+
+.exec-log-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.exec-log-timer {
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #94a3b8;
+}
+
+.exec-log-close {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.exec-log-close:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+/* ── BODY: 2-COLUMN LAYOUT ── */
+.exec-log-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+}
+
+/* ── LEFT COLUMN ── */
+.exec-log-left {
+  width: 460px;
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-right: 1px solid rgba(99, 102, 241, 0.15);
+  overflow-y: auto;
+}
+
+/* Active Agent Banner */
+.exec-active-agent {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: border-color 0.4s;
+}
+
+.exec-active-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.exec-active-name {
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 18px rgba(99, 102, 241, 0.25);
+  transition: color 0.4s;
+}
+
+/* Score Cards */
+.exec-score-row {
+  display: flex;
+  gap: 8px;
+}
+
+.exec-score-card {
+  flex: 1;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 8px;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.exec-score-card.pass { border-color: rgba(16, 185, 129, 0.3); }
+.exec-score-card.fail { border-color: rgba(239, 68, 68, 0.3); }
+.exec-score-card.running { border-color: rgba(245, 158, 11, 0.3); }
+
+.exec-score-num {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.05;
+}
+
+.exec-score-card.pass .exec-score-num  { color: #10b981; }
+.exec-score-card.fail .exec-score-num  { color: #ef4444; }
+.exec-score-card.running .exec-score-num{ color: #f59e0b; }
+
+.exec-score-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #cbd5e1;
+  margin-top: 2px;
+}
+
+/* Test Case List */
+.exec-tc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.exec-tc-header {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #cbd5e1;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+
+.exec-tc-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: all 0.3s;
+}
+
+.exec-tc-row.running {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.05);
+  animation: tc-pulse 1.5s infinite;
+}
+
+.exec-tc-row.pass {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.exec-tc-row.fail {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.04);
+}
+
+@keyframes tc-pulse {
+  0%, 100% { box-shadow: none; }
+  50%       { box-shadow: 0 0 10px rgba(245, 158, 11, 0.2); }
+}
+
+.exec-tc-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.exec-spinner {
+  display: inline-block;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.exec-tc-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.exec-tc-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exec-tc-agent {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.exec-tc-status {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.exec-tc-status.pass    { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+.exec-tc-status.fail    { background: rgba(239, 68, 68, 0.15);  color: #ef4444; }
+.exec-tc-status.running { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.exec-tc-status.pending { background: rgba(100, 116, 139, 0.15); color: #64748b; }
+
+/* ── RIGHT COLUMN: LOG STREAM ── */
+.exec-log-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.exec-log-stream-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #64748b;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  text-transform: uppercase;
+}
+
+.exec-pulse {
+  font-size: 11px;
+  color: #10b981;
+  animation: pulse-text 1.5s infinite;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes pulse-text {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.exec-log-stream {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.exec-log-stream::-webkit-scrollbar { width: 4px; }
+.exec-log-stream::-webkit-scrollbar-track { background: transparent; }
+.exec-log-stream::-webkit-scrollbar-thumb { background: rgba(99, 102, 241, 0.3); border-radius: 2px; }
+
+.exec-log-empty {
+  color: #475569;
+  font-size: 13px;
+  text-align: center;
+  padding: 40px;
+}
+
+.exec-log-entry {
+  display: grid;
+  grid-template-columns: 72px 130px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.exec-log-entry.latest {
+  background: rgba(99, 102, 241, 0.07);
+  border-color: rgba(99, 102, 241, 0.2);
+  animation: log-highlight 0.5s ease;
+}
+
+@keyframes log-highlight {
+  from { background: rgba(99, 102, 241, 0.2); }
+  to   { background: rgba(99, 102, 241, 0.07); }
+}
+
+.exec-log-ts {
+  color: #475569;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.exec-log-agent {
+  font-weight: 700;
+  font-size: 11px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.exec-log-msg {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* ── TRIGGER BUTTON (used in App.tsx) ── */
+.exec-log-trigger-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+  z-index: 1000;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+
+.exec-log-trigger-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+}
+
+.exec-log-trigger-btn .trigger-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  animation: pulse-green 1.2s infinite;
+  box-shadow: 0 0 6px #10b981;
+}
+
+/* ── NEW: BADGE VARIANTS ── */
+.exec-log-badge.badge-running { background: rgba(245,158,11,0.2); color: #f59e0b; border-color: rgba(245,158,11,0.35); }
+.exec-log-badge.badge-done    { background: rgba(16,185,129,0.2);  color: #10b981; border-color: rgba(16,185,129,0.35); }
+.exec-log-badge.badge-failed  { background: rgba(239,68,68,0.2);   color: #ef4444; border-color: rgba(239,68,68,0.35); }
+.exec-log-badge.badge-pending { background: rgba(100,116,139,0.2); color: #94a3b8; border-color: rgba(100,116,139,0.3); }
+
+.exec-log-status-dot.failed { background: #ef4444; box-shadow: 0 0 8px #ef4444; }
+
+.exec-log-intent-badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  color: #64748b;
+  border: 1px solid rgba(255,255,255,0.08);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── NEW: PROGRESS BAR ── */
+.exec-progress-wrap {
+  padding: 0 2px;
+}
+
+.exec-progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.exec-progress-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.exec-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease, background 0.4s ease;
+}
+
+/* ── NEW: PENDING SCORE CARD ── */
+.exec-score-card.pending { border-color: rgba(100,116,139,0.3); }
+.exec-score-card.pending .exec-score-num { color: #64748b; }
+
+/* ── NEW: NODE STATUS CLASSES ── */
+.exec-tc-row.node-active {
+  border-color: rgba(99,102,241,0.5);
+  background: rgba(99,102,241,0.07);
+  animation: tc-pulse-indigo 1.5s infinite;
+}
+
+.exec-tc-row.node-completed {
+  border-color: rgba(16,185,129,0.3);
+  background: rgba(16,185,129,0.04);
+}
+
+.exec-tc-row.node-failed {
+  border-color: rgba(239,68,68,0.3);
+  background: rgba(239,68,68,0.04);
+}
+
+.exec-tc-row.node-bypassed {
+  border-color: rgba(100,116,139,0.15);
+  background: transparent;
+  opacity: 0.45;
+}
+
+.exec-tc-row.node-pending {
+  border-color: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+}
+
+@keyframes tc-pulse-indigo {
+  0%, 100% { box-shadow: none; }
+  50%       { box-shadow: 0 0 12px rgba(99,102,241,0.25); }
+}
+
+/* Node status badge overrides */
+.exec-tc-status.node-active    { background: rgba(99,102,241,0.2);  color: #818cf8; }
+.exec-tc-status.node-completed { background: rgba(16,185,129,0.15); color: #10b981; }
+.exec-tc-status.node-failed    { background: rgba(239,68,68,0.15);  color: #ef4444; }
+.exec-tc-status.node-bypassed  { background: rgba(100,116,139,0.1); color: #475569; }
+.exec-tc-status.node-pending   { background: rgba(100,116,139,0.1); color: #64748b; }
+
+/* ── NEW: ACTIVE NODE PULSE DOT ── */
+.exec-node-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6366f1;
+  box-shadow: 0 0 6px #6366f1;
+  animation: pulse-indigo 1s infinite;
+}
+
+@keyframes pulse-indigo {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.5); }
+}
+
+/* ── NEW: NODE COUNT BADGE ── */
+.exec-node-count {
+  margin-left: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(99,102,241,0.15);
+  color: #818cf8;
+  border: 1px solid rgba(99,102,241,0.2);
+}
+
+/* ── PHASE-2 PILLAR DRILL-DOWN ── */
+.exec-pillar-card {
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.45);
+  overflow: hidden;
+}
+
+.exec-pillar-head {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.exec-pillar-head:hover {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.exec-pillar-body {
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 190px;
+  overflow-y: auto;
+}
+
+.exec-pillar-node-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 7px;
+  padding: 6px 8px;
+}
+
+.exec-pillar-node-key {
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  text-transform: capitalize;
+}
+
+/* Better usability on medium displays */
+@media (max-width: 1260px) {
+  .exec-log-panel { max-width: 1240px; }
+  .exec-log-left {
+    width: 400px;
+    min-width: 360px;
+  }
+  .exec-active-name { font-size: 26px; }
+}
+
+/* ── NEW: IDLE STATE ── */
+.exec-idle-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  color: #475569;
+  font-size: 0.8rem;
+  text-align: center;
+  gap: 4px;
+}
+
+/* ── NEW: SPINNER RING ── */
+.exec-spinner-ring {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(99,102,241,0.2);
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ── NEW: SYSTEM LOG DIMMING ── */
+.exec-log-entry.log-system .exec-log-agent,
+.exec-log-entry.log-system .exec-log-msg {
+  opacity: 0.55;
+}
+
+/* ── LEFT PANEL SCROLLBAR ── */
+.exec-log-left::-webkit-scrollbar { width: 4px; }
+.exec-log-left::-webkit-scrollbar-track { background: transparent; }
+.exec-log-left::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.2); border-radius: 2px; }

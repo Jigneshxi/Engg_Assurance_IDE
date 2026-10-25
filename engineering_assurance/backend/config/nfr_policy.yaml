@@ -1,0 +1,27 @@
+security:
+  critical: fail
+  high: fail
+  medium: warn
+  low: pass
+
+performance:
+  p95:
+    pass: 300
+    warn: 500
+    fail: 1000
+  rps:
+    pass: 100
+    warn: 50
+    fail: 0
+
+accessibility:
+  score:
+    pass: 95
+    warn: 90
+    fail: 0
+
+reliability:
+  uptime_pct:
+    pass: 99.9
+    warn: 99.0
+    fail: 0.0

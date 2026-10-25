@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ide</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('Captured window error:', e);
+        var el = document.getElementById('debug-err');
+        if (!el) {
+          el = document.createElement('div');
+          el.id = 'debug-err';
+          el.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#7f1d1d;color:#fef2f2;padding:20px;z-index:999999;font-family:monospace;white-space:pre-wrap;border-bottom:2px solid #ef4444;';
+          document.body.appendChild(el);
+        }
+        el.innerText += '\n[CLIENT ERROR]: ' + (e.message || e.toString()) + '\n' + (e.error ? e.error.stack : '') + '\nLocation: ' + e.filename + ':' + e.lineno;
+        fetch('http://localhost:3001/api/client-error', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ message: e.message, stack: e.error ? e.error.stack : null, file: e.filename, line: e.lineno })
+        }).catch(function(){});
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Captured unhandledrejection:', e);
+        var el = document.getElementById('debug-err');
+        if (!el) {
+          el = document.createElement('div');
+          el.id = 'debug-err';
+          el.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#7f1d1d;color:#fef2f2;padding:20px;z-index:999999;font-family:monospace;white-space:pre-wrap;border-bottom:2px solid #ef4444;';
+          document.body.appendChild(el);
+        }
+        el.innerText += '\n[UNHANDLED REJECTION]: ' + (e.reason && e.reason.stack ? e.reason.stack : (e.reason || e));
+        fetch('http://localhost:3001/api/client-error', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ message: e.reason ? e.reason.message : String(e.reason), stack: e.reason ? e.reason.stack : null })
+        }).catch(function(){});
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

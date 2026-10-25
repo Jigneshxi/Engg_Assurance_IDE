@@ -1,0 +1,8 @@
+# Shared IDE bridge and validation tools. Project dependencies remain isolated.
+-r requirements.txt
+fastapi
+sqlalchemy
+pytest
+httpx
+uvicorn
+alembic

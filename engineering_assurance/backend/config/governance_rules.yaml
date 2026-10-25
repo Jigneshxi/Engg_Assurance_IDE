@@ -1,0 +1,75 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Governance Rules Configuration
+# Enterprise teams can customise this file to add, disable, or adjust rules.
+# ─────────────────────────────────────────────────────────────────────────────
+
+rules:
+  - id: GOV-001
+    severity: HIGH
+    artifact_type: user_story
+    check: has_acceptance_criteria
+    message: "Missing acceptance criteria"
+    enabled: true
+
+  - id: GOV-002
+    severity: HIGH
+    artifact_type: test_case
+    check: has_expected_result
+    message: "Test case missing expected result"
+    enabled: true
+
+  - id: GOV-003
+    severity: MEDIUM
+    artifact_type: api_endpoint
+    check: has_authentication
+    message: "API endpoint has no authentication defined"
+    enabled: true
+
+  - id: GOV-004
+    severity: HIGH
+    artifact_type: test_data
+    check: no_pii_patterns
+    message: "Test data contains PII patterns (SSN, credit card, etc.)"
+    enabled: true
+
+  - id: GOV-005
+    severity: MEDIUM
+    artifact_type: execution_plan
+    check: has_rollback_strategy
+    message: "Execution plan missing rollback strategy"
+    enabled: true
+
+  - id: GOV-006
+    severity: LOW
+    artifact_type: user_story
+    check: has_priority
+    message: "User story has no priority assigned"
+    enabled: true
+
+  - id: GOV-007
+    severity: LOW
+    artifact_type: test_case
+    check: has_preconditions
+    message: "Test case missing preconditions"
+    enabled: true
+
+  - id: GOV-008
+    severity: MEDIUM
+    artifact_type: user_story
+    check: description_not_empty
+    message: "User story description is empty or too short"
+    enabled: true
+
+  - id: GOV-009
+    severity: HIGH
+    artifact_type: api_endpoint
+    check: has_error_handling
+    message: "API endpoint has no error response defined"
+    enabled: true
+
+  - id: GOV-010
+    severity: MEDIUM
+    artifact_type: execution_plan
+    check: has_timeout
+    message: "Execution plan missing timeout configuration"
+    enabled: true
